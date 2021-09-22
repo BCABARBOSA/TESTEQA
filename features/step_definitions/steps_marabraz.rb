@@ -4,7 +4,7 @@ Dado('que entrei no site Marabraz') do
 end
   
 
-E ('realizei uma pesquisa de {string}') do |item|
+E ('busquei o produto {string}') do |item|
     find('input[id="search"]').set item
     find('button[title="Buscar"]').click()
     
@@ -21,7 +21,7 @@ end
 
 
   
-Entao('o mesmo será encaminhado ao carrinho') do
+Entao('inseri o produto no carrinho') do
     
 end
   
